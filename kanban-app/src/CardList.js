@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import PropTypes from 'prop-types';
 
 export default class CardList extends React.Component {
     render() {
@@ -9,6 +10,7 @@ export default class CardList extends React.Component {
             title={card.title}
             description={card.description}
             tasks={card.tasks}
+            color={card.color}
         />));
 
         return (
@@ -18,4 +20,9 @@ export default class CardList extends React.Component {
             </div>
         )
     }
+}
+
+CardList.propTypes = {
+    title: PropTypes.string.isRequired,
+    cards: PropTypes.arrayOf(PropTypes.object).isRequired
 }

@@ -1,5 +1,5 @@
 {
-  "name": "project-ex08",
+  "name": "kanban-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,11 +7,12 @@
     "build": "npx webpack",
     "start": "npx webpack-dev-server"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "react": "^16.13.1",
